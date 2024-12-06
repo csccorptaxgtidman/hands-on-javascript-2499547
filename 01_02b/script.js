@@ -9,12 +9,11 @@ import data from "./data.js";
 const mainContent = document.querySelector(".main-content");
 
 const buildImage = (imgData) => {
-
   let srcset = `${imgData.urls.full} ${imgData.width}w`;
-  if(imgData.urls.regular) {
+  if (imgData.urls.regular) {
     srcset = srcset + `, ${imgData.urls.regular} 1080w`;
   }
-  if(imgData.urls.small) {
+  if (imgData.urls.small) {
     srcset = srcset + `, ${imgData.urls.small} 400w`;
   }
 
